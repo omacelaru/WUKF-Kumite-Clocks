@@ -24,13 +24,9 @@ Installation
 ------------
 
 Install the module with pip:
-
-```
-pip install customtkinter
-```
-    pip install tk;
-    pip install Pillow;
-    pip install pygame;
+    pip install tk \n
+    pip install Pillow
+    pip install pygame
 
 Contribute
 ----------
