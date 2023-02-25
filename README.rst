@@ -2,9 +2,6 @@ WUKF Kumite Clocks
 ========
 
 
-*Note: This template is not maintained anymore,
-use the* `tutorial <https://github.com/readthedocs/tutorial-template/>`_ *instead.*
-
 Installation
 ------------
 
