@@ -14,12 +14,6 @@ Look how easy it is to use:
     # Get your stuff done
     project.do_stuff()
 
-Features
---------
-
-- Be awesome
-- Make things faster
-
 Installation
 ------------
 
