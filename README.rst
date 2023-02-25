@@ -1,4 +1,4 @@
-Template
+WUKF Kumite Clocks
 ========
 
 
