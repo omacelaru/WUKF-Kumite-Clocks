@@ -23,9 +23,11 @@ Features
 Installation
 ------------
 
-Install $project by running:
-
-    install project
+Install the module with pip:
+    
+    pip install tk
+    pip install Pillow
+    pip install pygame
 
 Contribute
 ----------
