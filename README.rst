@@ -14,6 +14,10 @@ Install the module with pip:
 
     pip install tk 
 
+.. code-block:: console
+
     pip install Pillow
     
+.. code-block:: console
+
     pip install pygame
