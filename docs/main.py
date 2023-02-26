@@ -343,7 +343,7 @@ kinshi_white_button_minus.grid(row=1, column=0)
 
 kinshi_white_label = Label(root, width=4, height=3, bg="lightgray", font=decision_font,
                            textvariable=kinshi_white_string)
-#kinshi label
+# kinshi label
 kinshi_white_label.grid(row=0, column=1, rowspan=2, padx=5)
 
 # ATENAI WHITE
@@ -396,7 +396,7 @@ kinshi_red_button_minus.grid(row=1, column=13, padx=(0, 270))
 
 kinshi_red_label = Label(root, width=4, height=3, bg="lightgray", fg="red", font=decision_font,
                          textvariable=kinshi_red_string)
-#kinshi label
+# kinshi label
 kinshi_red_label.grid(row=0, column=12, rowspan=2)
 
 # ATENAI RED
@@ -431,7 +431,6 @@ score_red_plus_2 = Button(root, text="+2", width=4, height=2, font=button_root_f
                           command=lambda: points(3, "red"))
 score_red_plus_2.grid(row=4, column=11, padx=5)
 
-
 ### Time Freame ###
 time = Frame(root)
 time.grid(row=5, column=3, columnspan=9)
@@ -440,24 +439,23 @@ time.grid(row=5, column=3, columnspan=9)
 stopwatch_label = Label(time, text='00:00', font=('Arial', 165))
 stopwatch_label.grid(row=5, column=0, columnspan=13)
 
-
 ### Settings Frame ###
 setting = Frame(root, borderwidth=1, relief="solid")
 setting.grid(row=5, column=9, columnspan=6, padx=20)
 
 # minute label and entry
 minute_label = Label(setting, text="[minutes]")
-minute_label.grid(row=5,column=0)
+minute_label.grid(row=5, column=0)
 minut_entry = Entry(setting, textvariable=str_minut_entry, width=3, font=(font_, 18))
 minut_entry.grid(row=6, column=0, padx=5)
 
-#colon label
+# colon label
 colon_label = Label(setting, text=":", font=(font_, 16))
 colon_label.grid(row=6, column=1)
 
 # seconds label and entry
 seconds_label = Label(setting, text="[seconds]")
-seconds_label.grid(row=5,column=2)
+seconds_label.grid(row=5, column=2)
 second_entry = Entry(setting, textvariable=str_second_entry, width=3, font=(font_, 18))
 second_entry.grid(row=6, column=2, padx=5)
 
@@ -485,7 +483,6 @@ ippon_button = Button(kumite, text="Ippon Kumite", font=kumite_font, bg=str_bg_c
                       command=lambda: kumitef("ippon"))
 ippon_button.grid(row=7, column=3, padx=5, pady=40)
 
-
 #####  New root for second display on extend (join display) version #####
 ## The second window should be moved to the second screen
 root_second = Toplevel()
@@ -508,7 +505,7 @@ kinshi_red_label_second.grid(row=0, column=1, padx=5)
 atenai_red_label_second = Label(root_second, width=4, height=3, bg="lightgray", fg="red", font=decision_font_second,
                                 textvariable=atenai_red_string)
 
-#atenai red second label
+# atenai red second label
 atenai_red_label_second.grid(row=1, column=1)
 score_red_second = Label(root_second, font=score_font, fg="red", textvariable=str_red_score)
 score_red_second.grid(row=0, column=2, rowspan=2)
