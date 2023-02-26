@@ -10,6 +10,8 @@ Installation
 
 Install the module with pip:
 
+.. code-block:: console
+
     pip install tk 
 
     pip install Pillow
