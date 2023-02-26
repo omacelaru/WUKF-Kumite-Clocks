@@ -485,40 +485,60 @@ ippon_button = Button(kumite, text="Ippon Kumite", font=kumite_font, bg=str_bg_c
                       command=lambda: kumitef("ippon"))
 ippon_button.grid(row=7, column=3, padx=5, pady=40)
 
+
+#####  New root for second display on extend (join display) version #####
+## The second window should be moved to the second screen
 root_second = Toplevel()
 root_second.geometry("%dx%d" % (width, height))
-root_second.title("WUKF Kumite Clocks")
+root_second.title("WUKF Kumite Clocks (Extend)")
 root_second.iconbitmap("./images/logo.ico")
 
+# font for second window
 score_font_second = (font_, 320, 'bold')
 decision_font_second = (font_, 38, 'bold')
 
+# white space for center the score
 Label_space = Label(root_second, width=width // 30)
 Label_space.grid(row=0, column=0, rowspan=2)
+
+# kinshi red second label
 kinshi_red_label_second = Label(root_second, width=4, height=3, bg="lightgray", fg="red", font=decision_font_second,
                                 textvariable=kinshi_red_string)
 kinshi_red_label_second.grid(row=0, column=1, padx=5)
 atenai_red_label_second = Label(root_second, width=4, height=3, bg="lightgray", fg="red", font=decision_font_second,
                                 textvariable=atenai_red_string)
+
+#atenai red second label
 atenai_red_label_second.grid(row=1, column=1)
 score_red_second = Label(root_second, font=score_font, fg="red", textvariable=str_red_score)
 score_red_second.grid(row=0, column=2, rowspan=2)
+
+# logo for second window
 image2 = Image.open("./images/logo_second.jpg")
 image2 = image2.resize((250, 250))
 test2 = ImageTk.PhotoImage(image2)
 logo_second = Label(root_second, image=test2)
 logo_second.grid(row=0, column=3, rowspan=2)
+
+# score white label
 score_white_second = Label(root_second, font=score_font, textvariable=str_white_score)
 score_white_second.grid(row=0, column=4, rowspan=2)
+
+# kinshi white second label
 kinshi_white_label_second = Label(root_second, width=4, height=3, bg="lightgray", font=decision_font_second,
                                   textvariable=kinshi_white_string)
 kinshi_white_label_second.grid(row=0, column=5)
+
+# atenai white second label
 atenai_white_label_second = Label(root_second, width=4, height=3, bg="lightgray", font=decision_font_second,
                                   textvariable=atenai_white_string)
 atenai_white_label_second.grid(row=1, column=5)
 
+### Time Freame (second window) ###
 time_second = Frame(root_second)
 time_second.grid(row=2, column=1, columnspan=5)
+
+# time label
 stopwatch_label_second = Label(root_second, text='00:00', font=(font_, 165))
 stopwatch_label_second.grid(row=2, column=1, columnspan=5)
 
