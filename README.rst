@@ -9,8 +9,11 @@ The projects is built in Python with the `tkinter
 <https://docs.python.org/3/library/tkinter.html>`_
 interface.
 
+* Main screen
 .. image:: https://github.com/omacelaru/WUKF-Kumite-Clocks/blob/master/docs/images/main.png
    :alt: Main screen
+   
+* Extend screen
 .. image:: https://github.com/omacelaru/WUKF-Kumite-Clocks/blob/master/docs/images/extend.png
    :alt: Extend screen
 
