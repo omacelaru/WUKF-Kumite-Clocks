@@ -53,6 +53,7 @@ str_white_score = StringVar()
 str_white_score.set("0")
 str_red_score = StringVar()
 str_red_score.set("0")
+str_bg_pause_button = "orange"
 
 # use a boolean variable to help control state of time (running or not running)
 running = False
@@ -243,16 +244,18 @@ def start(event):
 
 
 # function for pause the time and change the text of pause button
-def pause():
-    global running, minutes, seconds
+def pause(event):
+    global running, minutes, seconds, str_bg_pause_button
     if minutes >= 0 and seconds > 0:
         if running:
             # cancel updating of time using after_cancel()
             stopwatch_label.after_cancel(update_time)
             stopwatch_label_second.after_cancel(update_time)
             str_pause_play.set("Play")
+            pause_button.configure(bg="green")
             running = False
         else:
+            pause_button.configure(bg="orange")
             str_pause_play.set("Pause")
             running = True
             update()
@@ -463,8 +466,11 @@ second_entry.grid(row=6, column=2, padx=5)
 start_button = Button(setting, text='Start', font=('Arial', 20))
 start_button.grid(row=6, column=4, padx=5, pady=10)
 start_button.bind('<Double-Button-1>', start)
-pause_button = Button(setting, textvariable=str_pause_play, width=5, font=('Arial', 20), command=pause)
+root.bind('<Return>', start)
+pause_button = Button(setting, bg=str_bg_pause_button, textvariable=str_pause_play, width=5, font=('Arial', 20),
+                      command=pause)
 pause_button.grid(row=6, column=5, padx=5)
+root.bind('<Control-space>', pause)
 reset_button = Button(setting, text='Reset', font=('Arial', 20), command=reset)
 reset_button.grid(row=6, column=6, padx=5)
 quit_button = Button(setting, text='Quit', font=('Arial', 20), command=root.quit)
