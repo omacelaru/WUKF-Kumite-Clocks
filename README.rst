@@ -1,7 +1,7 @@
 WUKF Kumite Clocks
 ========
 
-The application is used for kumite matches according to WUKF rules.
+The application has a user-friendly interface that allows judges to quickly and accurately record scores and track the progress of the match. It also offers an automatic timer for each round and has built-in features to ensure that the match adheres to the WUKF rules.
 
 When running main.py two windows will open. The first one is for display on the external screen and the scond one is for the person working on the laptop.
 
