@@ -16,6 +16,13 @@ interface.
 * Extend screen
 .. image:: https://github.com/omacelaru/WUKF-Kumite-Clocks/blob/master/docs/images/extend.png
    :alt: Extend screen
+   
+Shortcuts
+---------
+
+Start - Enter key
+
+Pause - Control + space
 
 Installation
 ------------
